@@ -1,0 +1,1091 @@
+*,*:after, *:before{
+    margin: 0px;
+    padding: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#contenedor_carga{
+  background-color: rgb(250,240,245,0.9);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  z-index: 10000;
+}
+
+#carga{
+    border: 10px solid #ccc;
+    border-top-color:#603813;
+    opacity: .7;
+    border-top-style: groove;
+    height: 60px;
+    width: 60px;
+    border-radius:100%;
+
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    -webkit-animation: girar 1.5s linear infinite;
+    -o-animation: girar 1.5s linear infinite;
+    animation: girar 1.5s linear infinite;
+}
+
+@keyframes girar {
+    from {transform: rotate(0deg);}
+    to {transform : rotate(360deg);}
+}
+
+body{
+
+background-image: url("../img/balazo1.jpg");
+
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+
+
+font-family: 'Titillium Web', sans-serif;
+font-size: 18px;  
+}
+body::before {
+    content: "";
+    width: 100%;
+    min-height: 270vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+   
+    background: linear-gradient(to right,#A3E4D7,#A3E4D7);
+    opacity: 0.2;
+    z-index: -1;
+}
+
+nav{
+    background:#FDFEFE;
+    opacity: 1;  
+}
+ nav a img{
+    opacity: none;
+    
+}
+ 
+li a:hover{
+    transform: scale(1.2);
+  
+
+} 
+  li a{
+    transition: transform .2s;
+    text-decoration: none;
+    
+}
+
+a img{
+   height: 100px;
+   width: 150px;
+}
+
+.rsociales{
+    padding-left: 35px;
+}
+.foto-principal a img{
+    width: 100%;
+    height: 100%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+header{
+    padding-bottom: 5px; 
+}
+
+/*-----efecto sobre logo-----*/
+.logotipo img{
+    transition: transform .2s;
+    
+  }
+.logotipo img:hover{
+  transform: scale(1.2);
+
+}
+.logotipo{
+    width: 100%;
+    height: 200px;
+}
+.color-menu{
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #808B96;
+}
+.pt-3{
+    color: #603813;
+    opacity: .7;
+    font-weight: bolder;
+}
+.menu-vertical ul{
+    list-style: none;
+    padding-right: 50px;
+    
+}
+.menu-vertical li{
+    width: 100%;
+    height: 40px;
+}
+.menu-vertical a{
+    color: #603813;
+    opacity: .6;
+    text-decoration: none;
+}
+.col-md-6{
+    padding: 0 60px 20px 80px; 
+}
+    
+.carousel-inner{
+    width:100%;
+    max-height: 469px !important;
+  }
+  .carousel-inner img{
+    max-height: 469;
+    
+}
+
+/*-----Estilos Página Index Foto-----*/
+.foto-principal {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+    position:relative;  
+    width: 100%;
+    height: 550px;
+    background:url("../img/RestauranteRanchoeden.jpg"); 
+    background-size:100% 100%;
+    overflow:hidden;
+    color:white;
+} 
+    .foto-principal h2{
+    position: absolute;
+    right: 10px;
+    top:20px;
+    transform: translateY(-160%);
+    transition:all .5s ease;
+    } 
+    .foto-principal h3{
+        position: absolute;
+        right: 100px;
+        text-align: center;
+        top:440px;
+        transform: translateY(320%);
+        transition:all .5s ease;
+    } 
+    
+    .foto-principal:before{ 
+    position: absolute;
+    top:480px; 
+    left:20px;
+    content:""; 
+    width:0%; 
+    height:3px; 
+    background:#fff;
+    transition:all .3s ease;
+    } 
+    .foto-principal:after{ 
+     position: absolute; 
+     top:10px; 
+     right:20px; 
+     content:""; 
+     width:0%; 
+     height:3px; 
+     background:#fff;
+     transition:all .3s ease;
+      } 
+    
+    .foto-principal:hover:before{ 
+     width: 90%;
+      }
+    .foto-principal:hover:after {
+    width: 90%;
+      }
+    .foto-principal:hover h2,.foto-principal:hover h3{
+     transform:translateX(0%); 
+     transition:all .3s ease;
+      }
+    .foto-principal:hover{
+     transition:all .5s ease;
+    
+    }
+
+/*-----Texto del video-----*/
+.tit-video{
+    color: #603813;
+    font-weight: bold;
+    
+}
+.parrafo_video{
+    color: #603813;
+    opacity: .9;
+    text-align: justify;
+    
+}
+
+/*-----Efectos hover en menú-----*/
+/* .menu-vertical{
+    position: absolute;
+    height: 40px;
+    width: 0px;
+} */
+.menu-vertical li a:hover{
+  text-decoration: underline;  
+  font-size: 22px;
+  color: black;
+  opacity: .8;
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+} 
+
+.fa-facebook-f{
+    color: black;
+
+}
+.fa-instagram{
+    color:black;
+}
+.fa-youtube{
+    color: black;
+}
+
+.fa-facebook-f:hover{
+     color: #3b5998;
+}
+.fa-instagram:hover{
+    color: #125688;
+}
+.fa-youtube:hover{
+    color: #bb0000;
+}
+
+/*-----Responsive Página Index 768-----*/
+@media (max-width:768px){
+    .foto-principal {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+    position:relative;  
+    width: 100%;
+    height: 350px;
+    background:url("../img/RestauranteRanchoeden.jpg"); 
+    background-size:100% 100%;
+    overflow:hidden;
+    color:white;
+ }
+
+ .foto-principal h2{
+    position: absolute;
+    font-size: 14px;
+    right: 10px;
+    top:20px;
+    transform: translateY(-400%);
+    transition:all .5s ease;
+    } 
+    .foto-principal h3{
+        position: absolute;
+        right: 10px;
+        font-size: 18px;
+        text-align: center;
+        top:320px;
+        transform: translateY(500%);
+        transition:all .5s ease;
+    } 
+    
+    .foto-principal:before{ 
+    position: absolute;
+    top:340px; 
+    left:20px;
+    content:""; 
+    width:0%; 
+    height:3px; 
+    background:#fff;
+    transition:all .3s ease;
+    } 
+    .foto-principal:after{ 
+     position: absolute; 
+     top:10px; 
+     right:20px; 
+     content:""; 
+     width:0%; 
+     height:3px; 
+     background:#fff;
+     transition:all .3s ease;
+      } 
+    
+    .foto-principal:hover:before{ 
+     width: 90%;
+      }
+    .foto-principal:hover:after {
+    width: 90%;
+      }
+    .foto-principal:hover h2,.foto-principal:hover h3{
+     transform:translateX(0%); 
+     transition:all .3s ease;
+      }
+    .foto-principal:hover{
+     transition:all .5s ease;
+    
+    }
+
+}
+
+
+/*-----Responsive Página Index 425px-----*/
+@media (max-width:425px){
+    .foto-principal {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+    position:relative;  
+    width: 100%;
+    height: 250px;
+    background:url("../img/RestauranteRanchoeden.jpg"); 
+    background-size:100% 100%;
+    overflow:hidden;
+    color:white;
+ }
+
+ .foto-principal h2{
+    position: absolute;
+    font-size: 10px;
+    right: 10px;
+    top:20px;
+    transform: translateY(-400%);
+    transition:all .5s ease;
+    } 
+    .foto-principal h3{
+        position: absolute;
+        right: 10px;
+        font-size: 18px;
+        text-align: center;
+        top:190px;
+        transform: translateY(500%);
+        transition:all .5s ease;
+    } 
+    
+    .foto-principal:before{ 
+    position: absolute;
+    top:190px; 
+    left:20px;
+    content:""; 
+    width:0%; 
+    height:3px; 
+    background:#fff;
+    transition:all .3s ease;
+    } 
+    .foto-principal:after{ 
+     position: absolute; 
+     top:10px; 
+     right:20px; 
+     content:""; 
+     width:0%; 
+     height:3px; 
+     background:#fff;
+     transition:all .3s ease;
+      } 
+    
+    .foto-principal:hover:before{ 
+     width: 90%;
+      }
+    .foto-principal:hover:after {
+    width: 90%;
+      }
+    .foto-principal:hover h2,.foto-principal:hover h3{
+     transform:translateX(0%); 
+     transition:all .3s ease;
+      }
+    .foto-principal:hover{
+     transition:all .5s ease;
+    
+    }
+
+}
+
+
+/*-----Responsive Página Index 375px-----*/
+@media (max-width:375px){
+    .foto-principal {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+    position:relative;  
+    width: 100%;
+    height: 240px;                                                                         
+    background:url("../img/RestauranteRanchoeden.jpg"); 
+    background-size:100% 100%;
+    overflow:hidden;
+    color:white;
+ }
+
+ .foto-principal h2{
+    position: absolute;
+    font-size: 9px;
+    right: 8px;
+    top:20px;
+    transform: translateY(-400%);
+    transition:all .5s ease;
+    } 
+    .foto-principal h3{
+        position: absolute;
+        right: 10px;
+        font-size: 16px;
+        text-align: center;
+        top:190px;
+        transform: translateY(500%);
+        transition:all .5s ease;
+    } 
+    
+    .foto-principal:before{ 
+    position: absolute;
+    top:190px; 
+    left:20px;
+    content:""; 
+    width:0%; 
+    height:3px; 
+    background:#fff;
+    transition:all .3s ease;
+    } 
+    .foto-principal:after{ 
+     position: absolute; 
+     content:""; 
+     width:0%; 
+     height:3px; 
+     background:#fff;
+     transition:all .3s ease;
+     top:10px; 
+     right:20px; 
+    
+    } 
+    
+    .foto-principal:hover:before{ 
+     width: 90%;
+      }
+    .foto-principal:hover:after {
+    width: 90%;
+      }
+    .foto-principal:hover h2,.foto-principal:hover h3{
+     transform:translateX(0%); 
+     transition:all .3s ease;
+      }
+    .foto-principal:hover{
+     transition:all .5s ease;
+    
+    }
+
+}
+
+/*-----Estilos chat Whatsapp-----*/
+.chat_content{
+ padding: 0;
+ margin: 0;
+ background-color: #fff;
+ display: none;
+}
+.appWhatsapp{
+    position: fixed;
+    right: 26px;
+    bottom: 50px;
+    width: 60px;
+    z-index: 1000;
+}
+.appWhatsapp img{
+    width: 90%;
+    height: auto;
+}
+
+
+
+/*-----estilos footer-----*/
+.footer{
+    padding-top: 5px;
+    
+    
+}
+
+#info-footer h2{
+    
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    color:white;
+
+}
+
+
+/*-----Estilos página Carta -----*/
+
+.contenedor-menu{
+    width: 1100px;
+    height: 670px;
+    display: flex;
+    margin: auto;
+    margin-top: 15px;
+    perspective: 1500px;
+}
+.pagina-izquierda,
+.pagina-central,
+.pagina-derecha{
+    padding: 5px;
+    width: 100%;
+    height: 670px;
+    background: white;
+}
+.pagina-izquierda,
+.pagina-central,
+.pagina-derecha{
+background: rgba(255,255,255,1);
+background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(237,237,237,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(237,237,237,1)));
+background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(237,237,237,1) 100%);
+background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(237,237,237,1) 100%);
+background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(237,237,237,1) 100%);
+background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(237,237,237,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );
+}
+
+
+.lista-uno{
+  width: 100%;
+  text-align: center;
+}
+.lista-uno h1{
+    font-size: 24px;
+    margin: auto;
+}
+.lista-uno img{
+    width: 300px;
+    height: 550px;
+}
+.lista-uno p{
+   font-size: 16px;
+}
+.lista-centro h1{
+   font-size: 24px;
+   text-align: center;
+   margin: auto;
+}
+.lista-uno hr,
+.lista-centro hr{
+    width: 300px;
+    height: 2px;
+    border-style: none;
+    background: -webkit-linear-gradient(left, #b29f94, #603813,green);
+    
+}
+.lista-centro img{
+    width: 350px;
+    height: 550px;
+}
+
+.contenedor-lista{
+    width: 100%;
+    height: 100%;
+}
+
+/*-----Efectos Menú.-----*/
+
+.pagina-izquierda{
+    transform: rotateY(180deg);
+    transition: all 1s;
+    transform-origin: right;
+    transform-style: preserve-3d;
+    z-index: 10;
+}
+.pagina-izquierda2{
+    transform: rotateY(0deg);
+}
+
+.lado{
+    backface-visibility: hidden;
+}
+
+.delante{
+    transform: rotateY(180deg);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left:0;
+    background: white;
+}
+.delante img{
+    width: 300px;
+    margin: auto;
+    margin-top: 20px;
+    
+}
+.delante h1{
+    font-size: 26px;
+    color: #603813;
+    opacity: .9;
+    text-align: center;
+}
+.delante hr{
+    width: 200px;
+    height: 2px;;
+    margin: auto;
+    border-style: none;
+    background: -webkit-linear-gradient(left,#b29f94, #603813, green);
+}
+#btn-ver-menu{
+    cursor: pointer;
+    color: green;
+}
+#btn-ver-menu:hover{
+    cursor: pointer;
+    color: #fff;
+}
+.delante h3{
+    font-size: 20px;
+    font-style: italic;
+    padding-top: 5px;
+    color: #603813;
+    opacity: .8;
+}
+.delante h5{
+    font-size: 18px;
+    color: #603813;
+    opacity: .7;
+}
+/*-----Página derecha animación-----*/
+
+.pagina-derecha{
+    transform: rotateY(-180deg);
+    transform-origin: left;
+    transition: all 1s;
+    transform-style: preserve-3d;
+}
+.pagina-derecha2{
+    transform: rotateY(0deg);
+}
+.lado-pagina-derecha{
+    backface-visibility: hidden;
+}
+.pagina-derecha-atras{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+    transform: rotateY(-180deg);
+    border: 6px double #603813;
+    border-right: none;
+}
+.btn-cerrar{
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 40px;
+    height: 40px;
+    background: #603813;
+    border-radius: 50%;
+    color:white;
+    line-height: 2;
+    text-align: center;
+    filter: blur(1px); 
+    transition: all 300ms;
+    cursor: pointer;
+}
+.btn-cerrar:hover{
+  filter: blur(0px);
+}
+
+
+/*-----Efectos Carta Desayunos-----*/
+
+.contenedor-menud{
+    width: 1100px;
+    height: 670px;
+    display: flex;
+    margin: auto;
+    margin-top: 15px;
+    perspective: 1500px;
+}
+.pagina-izquierdad,
+.pagina-centrald,
+.pagina-derechad{
+    padding: 5px;
+    width: 100%;
+    height: 670px;
+    background: white;
+}
+.pagina-izquierdad,
+.pagina-centrald,
+.pagina-derechad{
+background: rgba(255,255,255,1);
+background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(237,237,237,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(237,237,237,1)));
+background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(237,237,237,1) 100%);
+background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(237,237,237,1) 100%);
+background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(237,237,237,1) 100%);
+background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(237,237,237,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );
+}
+
+
+.lista-unod{
+  width: 100%;
+  text-align: center;
+}
+.lista-unod h1{
+    font-size: 24px;
+    margin: auto;
+}
+.lista-unod img{
+    width: 300px;
+    height: 550px;
+}
+.lista-unod p{
+   font-size: 16px;
+}
+.lista-centrod h1{
+   font-size: 24px;
+   text-align: center;
+   margin: auto;
+}
+.lista-unod hr,
+.lista-centrod hr{
+    width: 300px;
+    height: 2px;
+    border-style: none;
+    background: -webkit-linear-gradient(left, #b29f94, #603813,green);
+    
+}
+.lista-centrod img{
+    width: 350px;
+    height: 550px;
+}
+
+.contenedor-listad{
+    width: 100%;
+    height: 100%;
+}
+
+/*-----Efectos Menú.-----*/
+
+.pagina-izquierdad{
+    transform: rotateY(180deg);
+    transition: all 1s;
+    transform-origin: right;
+    transform-style: preserve-3d;
+    z-index: 10;
+}
+.pagina-izquierda2d{
+    transform: rotateY(0deg);
+}
+
+.ladod{
+    backface-visibility: hidden;
+}
+
+.delanted{
+    transform: rotateY(180deg);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left:0;
+    background: white;
+}
+.delanted img{
+    width: 300px;
+    margin: auto;
+    margin-top: 20px;
+    
+}
+.delanted h1{
+    font-size: 26px;
+    color: #603813;
+    opacity: .9;
+    text-align: center;
+}
+.delanted hr{
+    width: 200px;
+    height: 2px;;
+    margin: auto;
+    border-style: none;
+    background: -webkit-linear-gradient(left,#b29f94, #603813, green);
+}
+#btn-ver-menud{
+    cursor: pointer;
+    color: green;
+}
+#btn-ver-menud:hover{
+    cursor: pointer;
+    color: #fff;
+}
+.delanted h3{
+    font-size: 20px;
+    font-style: italic;
+    padding-top: 5px;
+    color: #603813;
+    opacity: .8;
+}
+.delanted h5{
+    font-size: 18px;
+    color: #603813;
+    opacity: .7;
+}
+/*-----Página derecha animación-----*/
+
+.pagina-derechad{
+    transform: rotateY(-180deg);
+    transform-origin: left;
+    transition: all 1s;
+    transform-style: preserve-3d;
+}
+.pagina-derecha2d{
+    transform: rotateY(0deg);
+}
+.lado-pagina-derechad{
+    backface-visibility: hidden;
+}
+.pagina-derecha-atrasd{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+    transform: rotateY(-180deg);
+    border: 6px double #603813;
+    border-right: none;
+}
+.btn-cerrard{
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 40px;
+    height: 40px;
+    background: #603813;
+    border-radius: 50%;
+    color:white;
+    line-height: 2;
+    text-align: center;
+    filter: blur(1px); 
+    transition: all 300ms;
+    cursor: pointer;
+}
+.btn-cerrard:hover{
+  filter: blur(0px);
+}
+
+.list-group-item{
+    color: #603813;
+    opacity: .9;
+}
+.btn-carta{
+    text-align: right;
+}
+
+
+/*-----Estilos página galería-----*/
+
+.tit_galeria{
+    font-size: 28px;
+    color: #603813;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.galeria{
+    width: 100%;
+}
+.galeria img{
+    width: 19%;
+    height: 40%;
+    margin-left: 5px;
+    margin-right: 2px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 10px grey;
+    border-radius: 10%;
+    transition-duration: .5s;
+    opacity: .7;
+}
+.galeria img:hover{
+    opacity: 1;
+    border-radius: 2%;
+    transition-duration: .5s;
+}
+
+/*-----Responsive Galería----*/
+
+@media (max-width:425px){
+    .galeria img{
+        width: 97%;
+        height: 90%;
+        opacity: 1;
+    }
+}
+ @media (max-width:414px){
+    .galeria img{
+        width: 97%;
+        height: auto;
+        opacity: 1;
+    }
+}
+ 
+
+/*-----Estilos Hotel Servicios */
+    /*Tamaño del Slider-----*/
+   #slider{
+    width: 100%;
+    padding: 5px 0 0 0;
+}
+.tit-hotel{
+    color: #603813;
+    opacity: .9;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+.card h5{
+    color: #603813;
+    opacity: .9;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+ .parrafo_hotel{
+        color: #603813;
+        opacity: .9;
+        text-align: justify;
+        padding-top: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .tit-info{
+        color: #603813;
+        font-weight: bold;
+        text-align: center;
+        opacity: .9;
+        padding-top: 5px;
+    }
+
+/*-----Estilos Hotel Habitaciones-----*/
+.card_habitaciones img:hover{
+    opacity: .8;
+    transition-duration: .5s
+  
+}
+
+ /*-----Estilos Contacto-----*/
+ .text-contacto h4{
+     color: #603813;
+     opacity: .9;
+     padding-top: 10px;
+     text-align: center;
+     font-weight: bold;
+ }   
+ .formulario-contacto{
+     padding-top: 10px;
+ }
+ 
+ .text-contacto p{
+     color: #603813;
+     opacity: .9;
+     text-align: center;
+     padding-top: 10px;
+ }
+ .text-contacto img{
+     margin-top:  10px;
+}
+ .text-contacto img{
+     width: 100%;
+     height: 50%;
+     box-shadow: 0px 0px 20px grey;
+     border-radius: 10%;
+     transition-duration: .5s;
+ }
+ .text-contacto img:hover{
+    opacity: .8;
+    border-radius: 2%;
+    transition-duration: .5s;
+}
+
+/*-----Responsive Contacto-----*/
+@media (max-width:425px){
+     .text-contacto img{
+        height: 100%;
+        margin-bottom:10px;
+        opacity: 1;
+    }
+}
+@media (max-width:375px){
+    .text-contacto img{
+       height: 70%;
+       margin-bottom:10px;
+       opacity: 1;
+   }
+}
+
+
+/*-----Estilos Página Ubicación-----*/
+
+.tit_ubicacion{
+    color: #603813;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+.mapa iframe{
+    margin-bottom: 10px;
+    width: 700px;
+    height: 400px;
+}
+.card{
+    width: 24rem;
+}
+.card-title{
+    color: #603813;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+} 
+.card-text, .card-body p {
+    color: #603813;
+    font-weight: bold;
+}
+/*-----Responsive Ubicación-----*/
+@media (max-width:425px){
+    .mapa iframe{
+       width: 350px;
+       height: 300px; 
+   }
+   .card{
+    width: 22rem;
+    margin-bottom: 4px;
+ }
+}
+
+/*-----Estilos Página Comentarios-----*/
+.card{
+    width: 100%;
+}
+.comentarios p{
+    font-style: italic;
+}
